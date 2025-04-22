@@ -69,7 +69,7 @@ class LoginPage extends StatelessWidget {
                 ),
                 child: TextField(
                   controller: controller.passwordController,
-                  obscureText: true,
+
                   decoration: InputDecoration(
                     icon: Icon(Icons.lock_outline),
                     hintText: "Password",
@@ -83,7 +83,7 @@ class LoginPage extends StatelessWidget {
                 height: 50,
                 child: ElevatedButton(
                   onPressed: () {
-                    controller.loginCheck();
+                    controller.loginCheck(context);
                   },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.orange,
